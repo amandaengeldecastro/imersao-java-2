@@ -1,8 +1,6 @@
 package imersaoAlura;
 
-import java.awt.font.TextLayout;
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.InputStream;
 import java.net.URI;
 import java.net.URL;
@@ -13,7 +11,6 @@ import java.net.http.HttpResponse.BodyHandlers;
 import java.util.List;
 import java.util.Map;
 
-import javax.security.auth.callback.TextOutputCallback;
 
 public class App {	
 
@@ -29,27 +26,6 @@ public class App {
         // Extrair dados (titulo, poster, classificação)
         var parser = new JsonParser();
         List<Map<String, String>> listaDeFilmes = parser.parse(body);
-
-        // Exibir e manipular os dados 
-        for (Map<String,String> filme : listaDeFilmes) {
-            System.out.println("\u001b[1mTitulo:\u001b[m " + filme.get("title"));
-            System.out.println("\u001b[1mImagem:\u001b[m " + filme.get("image"));
-            System.out.println("\u001b[1mimDbRating:\u001b[m " + filme.get("imDbRating"));
-            double numStars = Double.parseDouble(filme.get("imDbRating"));
-            int numStarsInt = (int) numStars;
-            
-            InputStream meme;
-            if (numStarsInt<=6) {
-            		//meme = new FileInputStream(new File("sobreposicao/qualidadeDuvidosa.jpeg"));
-                	System.out.print("Avaliação menor ou igual a  6:  👎");
-            } else  {
-            	for (int i = 0; i <=numStarsInt; i++) {
-            		//meme = new FileInputStream(new File("sobreposicao/qualidadeRecomendavel.jpeg"));
-        		System.out.print("🍿");
-            	}
-            }
-            System.out.println("\n");      
-        }
         
         //Criar diretorio
         var diretorio = new File("figurinhas/");
@@ -57,19 +33,32 @@ public class App {
         
         // Gerador de figurinhas
         var geradora = new GeradorDeFigurinhas();
-        
+
+        // Exibir e manipular os dados 
         for (Map<String,String> filme : listaDeFilmes) {
+    	  String urlImagem = filme.get("image");
+          String titulo = filme.get("title");
 
-            String urlImagem = filme.get("image");
-            String titulo = filme.get("title");
+          InputStream inputStream = new URL(urlImagem).openStream();
+          String nomeArquivo = "figurinhas/" + titulo + ".png";
 
-            InputStream inputStream = new URL(urlImagem).openStream();
-            String nomeArquivo = "figurinhas/" + titulo + ".png";
-
-            geradora.criarFigurinhas(inputStream, nomeArquivo, "FILMÃO");
-
-            System.out.println(titulo);
-            System.out.println();
+          geradora.criarFigurinhas(inputStream, nomeArquivo, "FILMÃO");
+              
+          System.out.println("\u001b[1mTitulo:\u001b[m " + filme.get("title"));
+          System.out.println("\u001b[1mImagem:\u001b[m " + filme.get("image"));
+          System.out.println("\u001b[1mimDbRating:\u001b[m " + filme.get("imDbRating"));
+            
+          double numStars = Double.parseDouble(filme.get("imDbRating"));
+          int numStarsInt = (int) numStars;
+            
+            if (numStarsInt<=6) {
+                	System.out.print("Avaliação menor ou igual a  6:  👎");
+            } else  {
+            	for (int i = 0; i <=numStarsInt; i++) {
+            		System.out.print("🍿");
+            	}
+            }
+          System.out.println("\n");      
         }
     }
 }
