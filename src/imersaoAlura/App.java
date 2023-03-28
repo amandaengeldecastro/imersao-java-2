@@ -38,11 +38,9 @@ public class App {
         for (Map<String,String> filme : listaDeFilmes) {
     	  String urlImagem = filme.get("image");
           String titulo = filme.get("title");
-
           InputStream inputStream = new URL(urlImagem).openStream();
           String nomeArquivo = "figurinhas/" + titulo + ".png";
 
-          geradora.criarFigurinhas(inputStream, nomeArquivo, "FILMÃO");
               
           System.out.println("\u001b[1mTitulo:\u001b[m " + filme.get("title"));
           System.out.println("\u001b[1mImagem:\u001b[m " + filme.get("image"));
@@ -52,12 +50,14 @@ public class App {
           int numStarsInt = (int) numStars;
             
             if (numStarsInt<=6) {
-                	System.out.print("Avaliação menor ou igual a  6:  👎");
+                geradora.criarFigurinhas(inputStream, nomeArquivo, "POUCO-RECOMENDADO");
+                System.out.print("Avaliação menor ou igual a  6:  👎");
             } else  {
-            	for (int i = 0; i <=numStarsInt; i++) {
-            		System.out.print("🍿");
-            	}
-            }
+                geradora.criarFigurinhas(inputStream, nomeArquivo, "FILMÃO");
+		        	for (int i = 0; i <=numStarsInt; i++) {
+		        		System.out.print("🍿");
+		        	}
+            } 
           System.out.println("\n");      
         }
     }
