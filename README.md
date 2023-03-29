@@ -1,6 +1,6 @@
 # Imersão Java
-
 Este repositório contém os desafios da segunda edição da [Imersão Java da Alura](https://grupoalura.notion.site/Imers-o-Java-2-Edi-o-Guia-do-Mergulho-69e40005601f4d089a9add98251197de) [27 a 31 de março].
+Código de referência [aqui](https://github.com/alura-cursos/imersao-java-2/tree/aula3)
 
 ## [Desafio 1]
 1. Consumir o endpoint de filmes mais populares da API do IMDB. Procure também, na documentação da API do IMDB, o endpoint que retorna as melhores séries e o que retorna as séries mais populares;
@@ -13,6 +13,12 @@ Este repositório contém os desafios da segunda edição da [Imersão Java da A
 3. Colocar outra fonte como a Comic Sans ou a Impact, a fonte usada em memes;
 4. Colocar contorno (outline) no texto da imagem; 
 5. Colocar uma imagem de você que está fazendo esse curso sorrindo, fazendo joinha e fazer com que o texto da figurinha seja personalizado de acordo com as classificações do IMDB.
+
+## [Desafio 3]
+1. Transformar a classe que representa os conteúdos em um Record, disponível a partir do Java 16.
+2. Criar as suas próprias exceções e usá-las na classe que implementa o cliente HTTP. 
+3. Usar recursos do Java 8 e posterior, como Streams e Lambdas, para mapear uma lista em uma outra. 
+4. Criar uma Enum que une, como configurações, a URL da API e o extrator utilizado. 
 
 
 ## [Links úteis]
@@ -33,4 +39,24 @@ Este repositório contém os desafios da segunda edição da [Imersão Java da A
 15. Documentação da classe [Graphics2D](https://docs.oracle.com/en/java/javase/17/docs/api/java.desktop/java/awt/Graphics2D.html), a “caneta” que permite escrever, desenhar e imprimir outras imagens em uma imagem original;
 16. Documentação da [abstração InputStream](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/InputStream.html), que representa um fluxo de leitura de dados de qualquer fonte, como arquivos, URLs, entre outros;
 17. Primeira aula do curso [“Java Polimorfismo: entenda herança e interfaces”](https://www.alura.com.br/conteudo/java-heranca-interfaces-polimorfismo) da Alura;
-18. Apêndice da apostila [“Java e Orientação a Objetos”](https://www.alura.com.br/apostila-java-orientacao-objetos/apendice-pacote-java-io) da Alura sobre o pacote java.io que explica com mais detalhes a abstração InputStream.
+18. Apêndice da apostila [“Java e Orientação a Objetos”](https://www.alura.com.br/apostila-java-orientacao-objetos/apendice-pacote-java-io) da Alura sobre o pacote java.io que explica com mais detalhes a abstração InputStream;
+19. Documentação das [APIs da NASA](https://api.nasa.gov/);
+20. API da [Foto Astronômica do dia da NASA](https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY);
+21. Artigo na Alura “Como não aprender Java e Orientação a Objetos: getters e setters”;
+22. Livro [“Design Patterns”](https://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612), de 1994, que descreve soluções comuns para problemas recorrentes de como organizar seu código;
+23. Livro [“Refactoring”](https://www.amazon.com/Refactoring-Improving-Design-Existing-Code/dp/0201485672), de 1999, que cataloga maneiras sistemáticas de melhorar o código sem modificar o que é feito;
+24. Artigo na Alura [“Como não aprender Java e Orientação a Objetos: herança”](https://www.alura.com.br/artigos/como-nao-aprender-orientacao-a-objetos-heranca);
+25. Podcast Hipsters.tech sobre [Práticas de Orientação a Objetos](https://www.alura.com.br/podcast/praticas-de-orientacao-a-objetos-hipsters-129-a453);
+26. Podcast Hipsters.tech sobre [Design Patterns](https://www.alura.com.br/podcast/design-patterns-hipsters-206-a345);
+27. Podcast Hipsters.tech sobre [SOLID](https://www.alura.com.br/podcast/solid-codigo-bom-e-bonito-hipsters-ponto-tech-219-a649);
+28. Livro Desbravando [SOLID](https://www.casadocodigo.com.br/products/livro-desbravando-solid) do instrutor Alexandre Aquiles;
+
+
+
+
+
+
+
+
+
+
