@@ -15,11 +15,15 @@ Código de referência [aqui](https://github.com/alura-cursos/imersao-java-2/tre
 5. Colocar uma imagem de você que está fazendo esse curso sorrindo, fazendo joinha e fazer com que o texto da figurinha seja personalizado de acordo com as classificações do IMDB.
 
 ## [Desafio 3]
-1. Transformar a classe que representa os conteúdos em um Record, disponível a partir do Java 16.
-2. Criar as suas próprias exceções e usá-las na classe que implementa o cliente HTTP. 
-3. Usar recursos do Java 8 e posterior, como Streams e Lambdas, para mapear uma lista em uma outra. 
+1. Transformar a classe que representa os conteúdos em um Record, disponível a partir do Java 16;
+2. Criar as suas próprias exceções e usá-las na classe que implementa o cliente HTTP;
+3. Usar recursos do Java 8 e posterior, como Streams e Lambdas, para mapear uma lista em uma outra;
 4. Criar uma Enum que une, como configurações, a URL da API e o extrator utilizado. 
 
+## [Desafio 4]
+1. Finalizar o CRUD (Create, Read, Update e Delete) para que se possa atualizar e excluir uma linguagem cadastrada;
+2. Devolver a listagem ordenada pelo ranking; 
+3. Retornar o status 201 quando um recurso (linguagem, no nosso caso) for cadastrado através do POST.
 
 ## [Links úteis]
 1. Documentação do pacote [javax.imageio](https://www.imdb.com/chart/top/), que trata de leitura e escrita de imagens;
@@ -50,7 +54,20 @@ Código de referência [aqui](https://github.com/alura-cursos/imersao-java-2/tre
 26. Podcast Hipsters.tech sobre [Design Patterns](https://www.alura.com.br/podcast/design-patterns-hipsters-206-a345);
 27. Podcast Hipsters.tech sobre [SOLID](https://www.alura.com.br/podcast/solid-codigo-bom-e-bonito-hipsters-ponto-tech-219-a649);
 28. Livro Desbravando [SOLID](https://www.casadocodigo.com.br/products/livro-desbravando-solid) do instrutor Alexandre Aquiles;
-
+29. Documentação do [Spring Framework](https://spring.io/);
+30. Link para [iniciar](https://start.spring.io/) um projeto utilizando Spring;
+31. Link para download do [Maven](https://maven.apache.org/download.cgi);
+32. Link para download do [Postman](https://www.postman.com/);
+33. Página para fazer o registro e começar a utilizar o [MongoDb Atlas](https://www.mongodb.com/cloud/atlas/register);
+34. GitHub com os [logos](https://github.com/abrahamcalf/programming-languages-logos) das linguagens de programação;
+35. Artigo sobre o [pack de stickers da Alura para Whatsapp e Telegram](https://www.alura.com.br/artigos/stickers-dev-aluraverso-whatsapp-telegram);
+36. Primeira aula do curso [“Maven: gerenciamento de dependências e build de aplicações Java”](https://www.alura.com.br/conteudo/maven-gerenciamento-dependencias-build-aplicacoes-java) da Alura;
+37. Alura + [“O que é REST?”](https://www.youtube.com/watch?v=weQ8ssA6iBU&ab_channel=AluraCursosOnline);
+38. Artigo da Alura [“Conceito e fundamentos sobre REST”](https://www.alura.com.br/artigos/rest-conceito-e-fundamentos);
+39. [Podcast Hipsters](https://www.hipsters.tech/mongodb-hipsters-ponto-tech-305/): Tech sobre MongoDB;
+40. Hipters.Tube [“O que é SQL e NoSQL?”](https://www.youtube.com/watch?v=aure5d3B88g&ab_channel=AluraCursosOnline);
+41. Artigo da Alura [“Spring: Conheça esse framework Java”](https://www.alura.com.br/artigos/spring-conheca-esse-framework-java);
+42. Alura + [Introdução ao Postman](https://www.youtube.com/watch?v=op81bMbgZXs&ab_channel=AluraCursosOnline).
 
 
 
