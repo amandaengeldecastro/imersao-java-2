@@ -25,6 +25,14 @@ Código de referência [aqui](https://github.com/alura-cursos/imersao-java-2/tre
 2. Devolver a listagem ordenada pelo ranking; 
 3. Retornar o status 201 quando um recurso (linguagem, no nosso caso) for cadastrado através do POST.
 
+## [Desafio 5]
+Deploy no [fly](https://fly.io/)
+1. Instale o comando flyctl na sua máquina
+2. Em um Terminal, execute o comando: flyctl launch --image jacquelineoliveira/linguagensapi:latest
+3. Configure o endereço do seu MongoDB com o comando: flyctl secrets set "SPRING_DATA_MONGODB_URI=mongodb+srv://seuusuario:suasenha@clusterAbc.xvcnx.mongodb.net/aluraDb?retryWrites=true&w=majority" (não deixe de definir o usuário e senha corretos)
+
+
+
 ## [Links úteis]
 1. Documentação do pacote [javax.imageio](https://www.imdb.com/chart/top/), que trata de leitura e escrita de imagens;
 2. Documentação da API do [IMDB](https://imdb-api.com/api);
@@ -67,7 +75,18 @@ Código de referência [aqui](https://github.com/alura-cursos/imersao-java-2/tre
 39. [Podcast Hipsters](https://www.hipsters.tech/mongodb-hipsters-ponto-tech-305/): Tech sobre MongoDB;
 40. Hipters.Tube [“O que é SQL e NoSQL?”](https://www.youtube.com/watch?v=aure5d3B88g&ab_channel=AluraCursosOnline);
 41. Artigo da Alura [“Spring: Conheça esse framework Java”](https://www.alura.com.br/artigos/spring-conheca-esse-framework-java);
-42. Alura + [Introdução ao Postman](https://www.youtube.com/watch?v=op81bMbgZXs&ab_channel=AluraCursosOnline).
+42. Alura + [Introdução ao Postman](https://www.youtube.com/watch?v=op81bMbgZXs&ab_channel=AluraCursosOnline);
+43. Dev em T: [especialista x generalista](https://www.alura.com.br/dev-em-t);
+44. Documentação do [Docker](https://docs.docker.com/get-started/overview/), a plataforma de containers utilizada para construir a imagem cujo deploy foi feito no Fly.io;
+45. Site do [Docker Hub](https://hub.docker.com/) , repositório central de imagens que podem ser usadas para executar containers de diferentes tecnologias e ferramentas;
+46. Site do [Fly.io](https://fly.io/), o PaaS (plataforma como serviço) utilizado nesta segunda edição da Imersão Java. Requer cartão de crédito. É fundamental entender a precificação e as quotas gratuitas do Fly.io;
+47. Site do [Heroku](https://www.heroku.com/), que foi o PaaS utilizado na primeira edição da Imersão Java. É importante entender a precificação do Heroku;
+48. Documentação sobre a [Oracle Cloud](https://docs.oracle.com/pt-br/iaas/Content/home.htm); 
+49. Artigo: [Como elaborar um bom arquivo Readme para os seus projetos](https://www.alura.com.br/artigos/escrever-bom-readme);
+50. Artigo da Alura [“Começando com Docker"](https://www.alura.com.br/artigos/comecando-com-docker);
+51. Artigo da Alura [“Heroku, Vercel e outras opções de Cloud como plataforma”](https://www.alura.com.br/artigos/heroku-vercel-outras-opcoes-cloud-plataforma);
+52. Podcast Hipters.Tech [“Integração Contínua, Deploy Contínuo e Github Actions”](https://www.alura.com.br/podcast/hipsterstech-integracao-continua-deploy-continuo-e-github-actions-hipsters-213-a335);
+53. Pesquisa da JetBrains, empresa que desenvolve a IDE IntelliJ, sobre o [ecossistema Java em 2021](https://www.jetbrains.com/lp/devecosystem-2021/java/).
 
 
 
